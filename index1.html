@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Travel</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <section id="navhead">
+        <img src="assets/image.png" alt="" />
+        <nav id="navbar">
+          <a class="list-nav" href="">Home</a>
+          <a class="list-nav" href="">Our Package</a>
+          <a class="list-nav" href="">Call Us</a>
+        </nav>
+        <nav id="nav-mobile">
+          <div class="dropdown-button" onclick="toggleDropdown()">☰</div>
+          <div id="dropdownMenu" class="dropdown-menu">
+            <a class="list-nav-mobile" href="">Home</a>
+            <a class="list-nav-mobile" href="">Our Package</a>
+            <a class="list-nav-mobile" href="">Call Us</a>
+          </div>
+        </nav>
+      </section>
+      <!-- Bagian bawah nav -->
+      <section class="depan">
+        <h1 class="title">Your Trusted Travel Agent's</h1>
+        <h6 id="subtitle">Your happiness is our hapiness</h6>
+      </section>
+    </header>
+    <main id="bagian-konten">
+      <section class="konten">
+        <!-- Bagian slider-->
+        <article id="artikel">
+          <div id="slider">
+            <img class="imageSlider" src="assets/korea.webp" alt="" />
+            <div id="review">
+              <h6>
+                <i class="feed">"Liburan jadi menyenangkan bersama Travel Agentku."</i>
+              </h6>
+              <div class="user">
+                <img class="logo-user" src="assets/logo.jpg" alt="" />
+                <div>
+                  <p class="nama">Florence Hughes</p>
+                  <p class="role">Ibu Rumah Tangga, 28</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section>
+            <p class="desc">Mengapa kalian harus memilih Travel Agent kita?</p>
+            <ol class="list-number">
+              <li class="list">Travel Agent kita sudah berdiri lebih dari 5 tahun</li>
+              <li class="list">Sudah dipercaya oleh lebih dari 100.000 orang</li>
+              <li class="list">Dipandu oleh guide yang sudah berpengalaman</li>
+            </ol>
+          </section>
+        </article>
+        <!-- Bagian Form-->
+        <section>
+          <section class="konten-kanan">
+            <h2>Contact Us</h2>
+            <p>Sales akan menghubungi anda 1x24 jam <br /></p>
+            <p>setelah data kami terima.</p>
+            <form class="form-input" action="./hasil/index.html">
+              <div class="name">
+                <label for="name"><h5>Your Name :</h5></label>
+                <input type="text" class="form" id="form-nama" placeholder="Masukan nama" /><br />
+              </div>
+              <div class="email">
+                <label for="email"><h5>Email Address :</h5></label>
+                <input type="text" class="form" id="form-email" placeholder="Masukan email" /><br />
+              </div>
+              <!-- Bagian dropdown -->
+              <div class="input-destinasi">
+                <label for="destination"><h5>What are you interested in?</h5></label>
+                <select class="form" id="form-destination">
+                  <option value="">Pilih Tempat Tujuan</option>
+                  <option value="Bali">Bali</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Bandung">Bandung</option>
+                  <option value="Surabaya">Surabaya</option>
+                  <option value="Other">Lain-lain</option></select
+                ><br />
+              </div>
+            </form>
+            <button class="button" type="button" onclick="setActionUrl()">Send</button>
+          </section>
+        </section>
+      </section>
+    </main>
+    <section class="konten-4">
+      <h1 class="package">Our Package</h1>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#808080" fill-opacity="1" d="M0,256L120,234.7C240,213,480,171,720,170.7C960,171,1200,213,1320,234.7L1440,256L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+    </svg>
+    <!-- Bagian atas 3 div -->
+    <div class="flex-container1">
+      <div id="flex-item-1">
+        <!-- Konten div pertama -->
+        <div class="logo-maps">
+          <img class="logo-maps1" src="assets/pngwing.com.png" alt="Bandung Icon" />
+        </div>
+        <div class="desc-kota">
+          <h4>Bali</h4>
+          <p>
+            Travel dan wisata di Bali. yang<br />
+            kaya akan keindahan alam dari itu di daratan maupun di lautan.
+          </p>
+        </div>
+      </div>
+      <div id="flex-item-2">
+        <div class="logo-maps">
+          <!-- Konten div kedua -->
+          <img class="logo-maps1" src="assets/pngwing.com.png" alt="Japan Icon" />
+        </div>
+        <div class="desc-kota">
+          <h4>Japan</h4>
+          <p>Nikmati keindahan Jepang dengan budaya yang kaya dan pemandangan menakjubkan.</p>
+        </div>
+      </div>
+      <div id="flex-item-3">
+        <div class="logo-maps">
+          <!-- Konten div ketiga -->
+          <img class="logo-maps1" src="assets/pngwing.com.png" alt="Singapore Icon" />
+        </div>
+        <div class="desc-kota">
+          <h4>Singapore</h4>
+          <p>Menyusuri negara modern dengan teknologi canggih dan destinasi wisata terbaik.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Bagian bawah 3 div -->
+    <div class="flex-container2">
+      <div class="flex-item-4">
+        <div class="logo-bintang">
+          <!-- Konten div keempat -->
+          <img class="bintang" src="assets/bintang.jpg" alt="Bali Icon" />
+        </div>
+        <div class="desc-kota">
+          <h4>Bandung</h4>
+          <p>
+            Travel dan wisata di kota Bandung,<br />
+            jelajahi kota yang begitu indah dan asri ini
+          </p>
+        </div>
+      </div>
+      <div class="flex-item-5">
+        <div class="logo-bintang">
+          <!-- Konten div keempat -->
+          <img class="bintang" src="assets/bintang.jpg" alt="Bali Icon" />
+        </div>
+        <div class="desc-kota">
+          <h4>Surabaya</h4>
+          <p>Telusuri segala wisata dan panorama alam di Surabaya kotanya para pahlawan .</p>
+        </div>
+      </div>
+      <div class="flex-item-6">
+        <div class="logo-bintang">
+          <!-- Konten div keempat -->
+          <img class="bintang" src="assets/bintang.jpg" alt="Bali Icon" />
+        </div>
+        <div class="desc-kota">
+          <h4>Third Feature</h4>
+          <p>Pengguna bisa memelih destinasi yang mau dituju</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="closing">
+      <h1>Perjalanan tak terlupakan, pesan sekarang!</h1>
+      <p>Jelajahi dunia dengan kami. Nikmati perjalanan tanpa khawatir.<br /></p>
+      <p>Pengalaman tak terlupakan menanti Anda. Percayakan pada travel agent terpercaya.</p>
+      <input type="button" value="Klik Disini" />
+    </div>
+
+    <script src="script1.js"></script>
+  </body>
+  <footer id="footer">
+    <p>Copyright</p>
+    <p>Dibuat oleh M Andro Eka H</p>
+    <p>Agustus 2023</p>
+  </footer>
+</html>
